@@ -1,0 +1,18 @@
+{
+  "name": "firebase-path",
+  "version": "1.0.0",
+  "description": "A tool to help you model your schema and provide a navigatable tree rather than magic strings everywhere.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava test/**/*.js --watch"
+  },
+  "keywords": [
+    "firebase",
+    "path"
+  ],
+  "author": "\"Jim Argeropoulos <tenholeharp@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.16.0"
+  }
+}
