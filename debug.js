@@ -5,9 +5,14 @@ const sut = require('./lib/firebase-path')
 const schema = {
                     foo: {
                         bar: {}
+                    },
+                    '<fruit>': {
+                        peel: {}
                     }
                 }
-const children = sut.parseJson(undefined)
+const children = sut.fromJson(schema)
 
-console.log(Object.keys(children))
+const template = children.fruit('apple')
+
+console.log(template.path())
 }())
